@@ -13,12 +13,8 @@
   ],
   "author": "Tom Liam Zigrand & Oussama Ghalbzouri",
   "license": "Please contact Criteo for more infos.",
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
-  },
+
   "devDependencies": {
-    "react": "^16.2.0",
-    "react-native": "^0.52.1"
+    "react-native": ">=0.52.1"
   }
 }
