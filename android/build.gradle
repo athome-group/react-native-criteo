@@ -32,10 +32,13 @@ repositories {
     mavenCentral()
     google()
     jcenter()
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
     implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'com.criteo.android:events-sdk:1.1.7'
+    implementation (name:'events-sdk-1.1.7', ext:'aar')
 }
