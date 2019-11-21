@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('events-sdk-1.1.7.aar'))

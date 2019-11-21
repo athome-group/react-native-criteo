@@ -3,9 +3,6 @@ buildscript {
     repositories {
         jcenter()
         google()
-        flatDir {
-            dirs 'libs'
-        }
     }
 
     dependencies {
@@ -31,8 +28,13 @@ android {
     }
 }
 
+repositories {
+    mavenCentral()
+    google()
+
+}
+
 dependencies {
     implementation 'com.facebook.react:react-native:+'
     implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation (name:'events-sdk-1.1.7', ext:'aar')
 }
