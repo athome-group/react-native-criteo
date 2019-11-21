@@ -3,6 +3,9 @@ buildscript {
     repositories {
         jcenter()
         google()
+        flatDir {
+            dirs 'libs'
+        }
     }
 
     dependencies {
@@ -25,15 +28,6 @@ android {
     }
     lintOptions {
         abortOnError false
-    }
-}
-
-repositories {
-    mavenCentral()
-    google()
-    jcenter()
-    flatDir {
-        dirs 'libs'
     }
 }
 
