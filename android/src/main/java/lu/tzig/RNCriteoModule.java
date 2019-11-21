@@ -12,16 +12,10 @@ import com.criteo.events.ProductViewEvent;
 import com.criteo.events.TransactionConfirmationEvent;
 import com.criteo.events.product.BasketProduct;
 import com.criteo.events.product.Product;
-import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableArray;
-
-import com.facebook.react.bridge.WritableMap;
-
-import org.apache.commons.lang3.StringUtils;
-
 import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Currency;
@@ -148,7 +142,7 @@ public class RNCriteoModule extends ReactContextBaseJavaModule {
   }
 
   private String computeMD5(final String s) {
-    if (StringUtils.isNotBlank(s)) {
+    if (s != null && !s.isEmpty()) {
       final String MD5 = "MD5";
       try {
         // Create MD5 Hash
